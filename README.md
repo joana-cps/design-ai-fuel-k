@@ -30,7 +30,9 @@ Specialized subagents that run in parallel or get auto-delegated by the parent a
 Persistent AI guidelines applied automatically. Currently includes a general tone rule (be direct, push back, cite sources).
 
 ### Skills (`.cursor/skills/`)
-Specialized agent capabilities. Work in progress.
+Specialized agent capabilities that commands can reference for domain-specific methodology.
+
+`presentation` — Kapterev dramaturgy method for building presentation structure, slides, and speaker notes. Used by `/create-presentation`.
 
 ## How to use
 

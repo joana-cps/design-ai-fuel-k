@@ -26,7 +26,9 @@
     ".cursor/commands/code-review.md",
     ".cursor/commands/code-review-peer.md",
     ".cursor/commands/code-explain.md",
-    ".cursor/commands/document.md"
+    ".cursor/commands/document.md",
+    ".cursor/commands/copy-review.md",
+    ".cursor/commands/create-presentation.md"
   ],
   "agents": [
     ".cursor/agents/security-reviewer.md",

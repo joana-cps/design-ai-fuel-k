@@ -27,14 +27,19 @@ Commands form a feature pipeline — each step feeds into the next. Every predec
 | Command | Mode | Description |
 |---------|------|-------------|
 | `/code-explain` | Ask | Three-level explanation (core concept, how it works, deep dive) for designer. |
+| `/copy-review` | Ask | Reviews interface copy against a guidelines file and UX writing best practices — suggests fixes. |
+| `/create-presentation` | Ask | Builds presentation structure, slides, and speaker notes using the Kapterev dramaturgy method. |
 
 ## How to create a good command?
 - 2500 characters max (including spaces and formatting)
 - Use the template below
 - Keep it very simple and to the point, reference results of other commands that might add useful context
 
-<details>
-<summary><strong>New command template</strong></summary>
+```markdown
+---
+name: command-name
+description: One-line description of what this command does
+---
 
 # Command name
 
@@ -49,7 +54,6 @@ Act as a...
 
 ### Mode: Ask / Agent / Plan / Debug
 E.g. Don't make any changes until my explicit approval
-(in the future might be useful to switch modes, when this is available in Cursor)
 
 ### 1. Step one name
 - ...
@@ -65,5 +69,4 @@ E.g. Don't make any changes until my explicit approval
 
 ## Output
 ...
-
-</details>
+```

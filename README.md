@@ -36,7 +36,11 @@ Specialized agent capabilities that commands can reference for domain-specific m
 
 ## How to use
 
-1. Clone or download this repo
-2. Copy the `.cursor/` folder into your project root
-3. Type `/` in Cursor's chat to see available commands
-4. Run commands in pipeline order for a full feature flow, or pick any command individually
+1. Download this repo
+2. Copy the `.cursor/` folder into your project root, or any of the subfolders or files separately, if you have a `.cursor/` folder there already
+
+**Commands** — invoke with `/command-name` in chat. They guide the AI through a structured task with a defined persona, steps, and output format.
+
+**Skills** — domain knowledge that commands or agents reference for methodology. A command like `/create-presentation` pulls in the `presentation` skill automatically. You can also reference a skill manually (e.g. `@.cursor/skills/presentation.md`).
+
+**Agents** — isolated sub-processes that run in parallel. Some trigger automatically (the parent agent delegates based on the task), others you invoke explicitly (`/researcher`, `/verifier`). They don't consume your main conversation's context.
